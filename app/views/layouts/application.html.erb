@@ -9,12 +9,16 @@
 <body>
     <header class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
-        <%= link_to "lefurjah.me", '#', id: "logo" %>
+        <%= link_to "lefurjah.me", root_path, id: "logo" %>
         <nav>
           <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Home",   root_path %></li>
-            <li><%= link_to "About",   about_path %></li>
-            <li><%= link_to "Log in", '#' %></li>
+            <li><%= link_to "home",   root_path %></li>
+            <li><%= link_to "about",   about_path %></li>
+            <%if !logged_in? %>
+            <li><%= link_to "log in", login_path %></li>
+            <% else %>
+            <li><%= link_to "log out", logout_path %><li>
+            <% end %>
           </ul>
         </nav>
       </div>
