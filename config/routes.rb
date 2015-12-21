@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root 'static_pages#home'
 
   get 'about' => 'static_pages#about'
+  resources :users
   # get 'login' => '#'
 
   # The priority is based upon order of creation: first created -> highest priority.
