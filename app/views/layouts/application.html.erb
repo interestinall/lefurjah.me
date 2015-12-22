@@ -12,7 +12,6 @@
         <%= link_to "lefurjah.me", root_path, id: "logo" %>
         <nav>
           <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "home",   root_path %></li>
             <li><%= link_to "about",   about_path %></li>
             <%if !logged_in? %>
             <li><%= link_to "log in", login_path %></li>

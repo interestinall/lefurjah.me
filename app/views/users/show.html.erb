@@ -1,1 +1,5 @@
-<%= @user.name %>, <%= @user.email %>
+<p> Welcome <%= @user.name %> </p>
+
+<p>You're looking handsome today.</p>
+
+<td><%= link_to 'make a new post', new_post_path(@user) %></td>

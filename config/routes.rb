@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   get 'users/new'
 
-  root 'static_pages#home'
+  root 'posts#index'
 
   get 'about' => 'static_pages#about'
 
@@ -15,7 +15,11 @@ Rails.application.routes.draw do
   get 'logout' => 'sessions#destroy'
 
 
+
+
   resources :users
+  resources :posts
+
   # get 'login' => '#'
 
   # The priority is based upon order of creation: first created -> highest priority.
