@@ -1,30 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Posts</h1>
+<h1>blog</h1>
+  <% @posts.reverse.each do |post| %>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Slug</th>
-      <th>Content</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @posts.reverse.each do |post| %>
-      <tr>
-        <td><%= post.title %></td>
-        <td><%= post.content %></td>
-        <%if logged_in? %>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <% end %>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
+      <h2><%= post.title %></h2>
+      <p><%= post.content %></p>
+      <%if logged_in? %>
+      <div class="centered">
+        <p class="blog-edit"><%= link_to 'Show', post %></p>
+        <p class="blog-edit"><%= link_to 'Edit', edit_post_path(post) %></p>
+        <p class="blog-edit"><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+      </div>
+      <% end %>
+  <% end %>
