@@ -7,9 +7,9 @@ gem 'rails', '4.2.3'
 # gem 'sqlite3'
 
 #WYSIWYG + picture upload
-gem 'ckeditor'
+
 gem 'carrierwave'
-gem 'mini_magick'
+
 gem 'bcrypt', '3.1.7'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
