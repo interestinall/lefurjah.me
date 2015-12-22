@@ -9,7 +9,9 @@
   <strong>Slug:</strong>
   <%= @post.slug %>
 </p>
-
+<p>
+<%= image_tag @post.image.url(:medium) %>
+</p>
 <p>
   <strong>Content:</strong>
   <%= @post.content %>
