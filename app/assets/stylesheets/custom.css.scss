@@ -96,23 +96,59 @@ h2{
   padding-right: 3%;
 }
 
+ul.nav.navbar-nav li a {
+  display: block;
+  float: right;
+  color: red;
+}
+#logo{
+  color: navy;
+  padding-top: 20px;
+}
+
+#logo:hover{
+  font-size: 1.9em;
+  color: navy;
+}
+
+
+ul.nav.navbar-nav{
+  float:right;
+}
+
+div#navbar.navbar-collapse.collapse.in{
+  border: none;
+  background: white;
+}
+
+div#navbar.navbar-collapse.collapsing{
+  border: none;
+  background: white;
+
+}
+
+button.navbar-toggle.collapsed{
+  margin-top: 12px;
+}
+nav.navbar.navbar-default.navbar-fixed-top{
+  background: white;
+  height: 60px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px 0px;
+
+}
 //small screens
 
+
+
 // Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-width : 320px) and (max-width : 480px) {
+@media only screen and (min-width : 320px) and (max-width : 767px) {
 
-  div.container{
-    background-color: green;
+  ul.nav.navbar-nav{
+    float:left;
   }
-  ul.nav.navbar-nav.navbar-right > li > a {
-    display: block;
-    float: left;
-  }
-
   #logo{
 
-    display: block;
-    width: 100%;
+
 
 
   }
