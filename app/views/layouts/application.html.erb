@@ -7,7 +7,36 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-    <header class="navbar navbar-fixed-top navbar-inverse">
+  <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- <a class="navbar-brand" href="#">lefurjah.me</a> -->
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <%= link_to "lefurjah.me", root_path, id: "logo" %>
+            <li><%= link_to "about",   about_path %></li>
+            <%if !logged_in? %>
+            <li><%= link_to "log in", login_path %></li>
+            <% else %>
+            <li><%= link_to "log out", logout_path %><li>
+            <% end %>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+
+    <!-- <header class="navbar navbar-fixed-top navbar-inverse" roll="navagation">
+      <div class="container">
       <div class="navbox">
         <%= link_to "lefurjah.me", root_path, id: "logo" %>
         <nav>
@@ -21,7 +50,7 @@
           </ul>
         </nav>
       </div>
-    </header>
+    </header> -->
     <div class="container">
       <%= yield %>
     </div>
