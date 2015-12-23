@@ -10,7 +10,7 @@ gem 'rails', '4.2.3'
 
 gem 'paperclip'
 
-
+gem 'sprockets-rails'
 gem 'bcrypt', '3.1.7'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
