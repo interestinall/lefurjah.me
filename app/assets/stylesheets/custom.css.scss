@@ -101,11 +101,8 @@ h2{
 // Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
-  .navbar-nav > li > a {
-    color: red;
-    display: block;
-    float: left;
-
-}
+  div.container{
+    background-color: green;
+  }
 
 }
