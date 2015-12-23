@@ -1,7 +1,7 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
 
-/* universal */
+//universal
 
 body {
   padding-top: 60px;
@@ -23,7 +23,7 @@ textarea {
   margin-bottom: 10px;
 }
 
-/* typography */
+//typography */
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
@@ -37,12 +37,14 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2em;
+  color: black;
+  font-size: 2em;
   letter-spacing: -1px;
   margin-bottom: 30px;
-  text-align: center;
   font-weight: normal;
-  color: #777;
+  text-align: left;
+
+
 }
 
 p {
@@ -50,7 +52,7 @@ p {
   line-height: 1.7em;
 }
 
-/* header */
+// header */
 
 #logo {
   float: left;
@@ -81,9 +83,7 @@ p {
 
 
 h2{
-  color: black;
-  text-align: left;
-  font-size: 2em;
+
 }
 
 .container{
@@ -94,4 +94,18 @@ h2{
 .navbox{
   padding-left: 3%;
   padding-right: 3%;
+}
+
+//small screens
+
+// Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+  .navbar-nav > li > a {
+    color: red;
+    display: block;
+    float: left;
+
+}
+
 }
