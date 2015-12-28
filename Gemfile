@@ -11,9 +11,8 @@ gem 'rails', '4.2.3'
 gem 'paperclip'
 
 #for amazon file storage
-
 gem 'aws-sdk'
-
+gem 'aws-s3'
 
 gem 'sprockets-rails'
 gem 'bcrypt', '3.1.7'
