@@ -5,7 +5,9 @@
 
       <h2><%= post.title %></h2>
       <p><%= post.created_at.strftime('%m.%d.%Y')%></p>
-      <% if post.image.exists? === true%>
+      <% puts 'loads up to picture'%>
+      <% if @post.image.exists? === true%>
+      <% puts 'trying to display picture'%>
       <%= image_tag @post.image.url(:large) %>
       <% end %>
       <p><%= simple_format(post.content) %></p>
