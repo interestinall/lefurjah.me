@@ -7,7 +7,7 @@ gem 'rails', '4.2.3'
 # gem 'sqlite3'
 
 #for amazon file storage
-gem 'aws-sdk'
+gem 'aws-sdk', ' <2.0'
 #for easy picture uploads
 gem 'paperclip'
 
