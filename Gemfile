@@ -6,9 +6,14 @@ gem 'rails', '4.2.3'
 # # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
 
-#WYSIWYG + picture upload
 
+#for easy picture uploads
 gem 'paperclip'
+
+#for amazon file storage
+
+gem 'aws-sdk'
+
 
 gem 'sprockets-rails'
 gem 'bcrypt', '3.1.7'
