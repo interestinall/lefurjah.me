@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Lefurjah.me</title>
+  <title>lefurjah.me</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -24,9 +24,7 @@
           <ul class="nav navbar-nav">
 
             <li><%= link_to "about",   about_path %></li>
-            <%if !logged_in? %>
-            <li><%= link_to "log in", login_path %></li>
-            <% else %>
+            <%if logged_in? %>
             <li><%= link_to "log out", logout_path %><li>
             <% end %>
           </ul>
