@@ -11,7 +11,7 @@ gem 'rails', '4.2.3'
 gem 'paperclip'
 
 #for amazon file storage
-gem 'aws-sdk'
+gem 'aws-sdk', '<2.0'
 
 
 gem 'sprockets-rails'
