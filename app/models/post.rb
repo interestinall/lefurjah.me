@@ -5,4 +5,12 @@ class Post < ActiveRecord::Base
   # Validate the attached image is image/jpg, image/png, etc
   validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
 
+  def slug_parse
+    slug.downcase.gsub(" ", "-")
+  end
+
+  def to_param
+    "#{slug_parse}"
+  end
+
 end

@@ -3,7 +3,7 @@
 <h1>newz</h1>
   <% @posts.reverse.each do |post| %>
 
-      <h2><%= post.title %></h2>
+      <h2><%= link_to post.title, post %></h2>
       <p><%= post.created_at.strftime('%m.%d.%Y')%></p>
       <% if post.image.exists? === true%>
       <%= image_tag post.image.url(:large) %>
