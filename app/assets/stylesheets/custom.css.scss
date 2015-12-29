@@ -141,8 +141,15 @@ nav.navbar.navbar-default.navbar-fixed-top{
   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px 0px;
 
 }
-//small screens
 
+.input-xlarge{
+  width: 400px;
+}
+
+#textarea {
+  height: 600px;
+  width: 600px;
+}
 
 
 // Smartphones (portrait and landscape) ----------- */
@@ -151,11 +158,6 @@ nav.navbar.navbar-default.navbar-fixed-top{
   ul.nav.navbar-nav{
     float:left;
   }
-  #logo{
 
-
-
-
-  }
 
 }
