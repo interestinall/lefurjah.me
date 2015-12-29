@@ -11,6 +11,9 @@ gem 'aws-sdk', ' <2.0'
 #for easy picture uploads
 gem 'paperclip'
 
+#making blog markdown ready
+
+gem 'redcarpet'
 
 
 
