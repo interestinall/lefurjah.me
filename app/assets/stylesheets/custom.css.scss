@@ -157,15 +157,27 @@ nav.navbar.navbar-default.navbar-fixed-top{
 
 
 
+
 .input-xlarge{
-  width: 400px !important;
+  width: 400px;
 }
 
 #textarea {
-  height: 600px !important;
-  width: 600px !important;
+  height: 600px;
+  width: 600px;
 }
 
 a {
   text-decoration: underline;
+}
+
+
+a:visited {
+    text-decoration: underline;
+    color:black !important;
+}
+
+a:hover{
+  color: red !important;
+  background-color: white !important;
 }
