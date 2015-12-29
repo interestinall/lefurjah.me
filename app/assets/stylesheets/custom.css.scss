@@ -142,14 +142,6 @@ nav.navbar.navbar-default.navbar-fixed-top{
 
 }
 
-.input-xlarge{
-  width: 400px !important;
-}
-
-#textarea {
-  height: 600px !important;
-  width: 600px !important;
-}
 
 
 // Smartphones (portrait and landscape) ----------- */
@@ -160,4 +152,20 @@ nav.navbar.navbar-default.navbar-fixed-top{
   }
 
 
+}
+
+
+
+
+.input-xlarge{
+  width: 400px !important;
+}
+
+#textarea {
+  height: 600px !important;
+  width: 600px !important;
+}
+
+a {
+  text-decoration: underline;
 }

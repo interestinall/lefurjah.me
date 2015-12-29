@@ -14,15 +14,4 @@
  *= require_self
  */
 
- .input-xlarge{
-   width: 400px !important;
- }
-
- #textarea {
-   height: 600px !important;
-   width: 600px !important;
- }
-
- a {
-   text-decoration: underline;
- }
+ 
