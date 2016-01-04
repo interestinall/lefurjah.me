@@ -8,7 +8,7 @@
       <% if post.image.exists? === true%>
       <%= image_tag post.image.url(:large) %>
       <% end %>
-      <p><%= markdown(post.content) %></p>
+      <p><%= markdown(post.content.reverse_each) %></p>
       <%if logged_in? %>
       <div class="centered">
         <p class="blog-edit"><%= link_to 'Show', post %></p>
